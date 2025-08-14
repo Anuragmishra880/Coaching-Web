@@ -1,7 +1,7 @@
 import React from 'react'
 import './Programs.css'
 import program1 from '../../assets/MERN.jpeg'
-import program2 from '../../assets/JavaDevelopment.jpeg'
+import program2 from '../../assets/javaDevelopment.jpeg'
 import program3 from '../../assets/Cyber-Security.jpeg'
 // import program_icon1 from '../../assets/program-icon-1.png'
 // import program_icon2 from '../../assets/program-icon-2.png'
@@ -9,7 +9,7 @@ import program3 from '../../assets/Cyber-Security.jpeg'
 import MERN from '../../assets/mern_stack_web.pdf'
 import JAVA from '../../assets/Java Development Expert.pdf'
 import Cyber from '../../assets/Cyber Security Expert.pdf'
-const Programs = () => {
+const Programs = () => { 
     return (
         <>
             <div className='programs' id='program'>
