@@ -1,0 +1,100 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: rgb(29, 29, 29);
+}
+
+.contact-col h3 {
+    color: rgb(29, 29, 29);
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col .fa-message {
+    color: rgb(240, 126, 4);
+    margin-left: 10px;
+}
+
+.contact-col p {
+    width: 450px;
+
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin-block: 20px;
+    margin-left: 0;
+    width: 300px;
+}
+
+.fa-location-dot {
+    margin-right: 10px;
+    font-size: xx-large;
+    color: rgb(22, 22, 231);
+}
+
+.fa-phone {
+    margin-right: 10px;
+    font-size: xx-large;
+    color: green;
+}
+
+.fa-envelope {
+    margin-right: 10px;
+    font-size: xx-large;
+    color: rgb(22, 22, 231);
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #ebecfe;
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+
+
+
+    .contact-col p {
+        width: 315px;
+    }
+
+    .contact-col h3 {
+
+        padding-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact-col{
+        width: 100%;
+        padding-inline: 20px;
+    }
+}

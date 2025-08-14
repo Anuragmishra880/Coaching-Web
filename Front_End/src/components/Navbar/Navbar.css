@@ -1,0 +1,41 @@
+nav {
+    background-color: rgb(40, 39, 39);
+}
+
+.logo {
+    width: 70px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav-dark {
+    background-color: navy;
+    transition-duration: 0.5s;
+}
+
+/* Medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .navbar-toggler {
+        margin-left: 460px;
+    }
+
+
+
+    .nav-dark {
+        background-color: rgb(40, 39, 39);
+
+    }
+
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 576px) {
+
+    .navbar-toggler {
+        margin-left: 300px;
+    }
+}
