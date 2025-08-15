@@ -3,17 +3,24 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 const Navbar = () => {
 
-    const [sticky, setSticky] = useState(false)
+    const [sticky, setSticky] = useState(false);
+
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        const handleScrollEvent = () => {
             if (window.scrollY > 50) {
-                setSticky(true)
+                setSticky(true);
+            } else {
+                setSticky(false);
             }
-            else {
-                setSticky(false)
-            }
-        })
-    }, [])
+        };
+
+        window.addEventListener('scroll', handleScrollEvent);
+
+        // Cleanup function to remove listener on unmount
+        return () => {
+            window.removeEventListener('scroll', handleScrollEvent);
+        };
+    }, []);
 
 
     const handleScroll = (e, targetId) => {
