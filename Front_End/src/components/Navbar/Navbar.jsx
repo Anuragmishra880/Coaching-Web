@@ -38,7 +38,7 @@ const Navbar = () => {
                                     spy={true}
                                     smooth={true}
                                     offset={-90}
-                                    duration={300}
+                                    duration={500}
                                     onClick={handleLinkClick}
                                 >
                                     Home
