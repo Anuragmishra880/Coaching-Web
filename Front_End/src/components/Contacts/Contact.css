@@ -93,8 +93,13 @@
     .contact {
         flex-direction: column;
     }
-    .contact-col{
+
+    .contact-col {
         width: 100%;
         padding-inline: 20px;
+    }
+
+    .contact-col a li {
+        font-size: medium;
     }
 }
