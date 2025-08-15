@@ -44,6 +44,9 @@ a {
   scroll-margin-top: 230px;
 }
 
-/* @media screen and (max-width:){
-  
-} */
+@media screen and (max-width:576px){
+ html,
+body{
+  overflow-x: hidden;
+}
+}
