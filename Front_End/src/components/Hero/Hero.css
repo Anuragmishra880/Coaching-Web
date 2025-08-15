@@ -99,6 +99,7 @@
     .Hero-txt p {
         font-size: 10px;
         padding-inline: 60px;
+        margin-inline: 10px;
     }
 
     .btn {
