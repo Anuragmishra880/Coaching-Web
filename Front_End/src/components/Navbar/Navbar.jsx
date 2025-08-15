@@ -50,11 +50,11 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto align-items-center gap-2">
-                            <li className="nav-item"><a className="nav-link active px-3 py-2" href="home" onClick={(e, "home")}>Home</a></li>
-                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#program" onClick={(e, "program")}>Program</a></li>
-                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#about" onClick={(e, "about")}>About</a></li>
-                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#campus" onClick={(e, "campus")}>Campus</a></li>
-                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#contact" onClick={(e, "contact")}>Contact</a></li>
+                            <li className="nav-item"><a className="nav-link active px-3 py-2" href="home" onClick={(e) => handleScroll(e, 'home')}>Home</a></li>
+                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#program" onClick={(e) => handleScroll(e, 'program')}>Program</a></li>
+                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#about" onClick={(e) => handleScroll(e, 'about')}>About</a></li>
+                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#campus" onClick={(e) => handleScroll(e, 'campus')}>Campus</a></li>
+                            <li className="nav-item"><a className="nav-link px-3 py-2" href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a></li>
 
                         </ul>
                     </div>
