@@ -97,8 +97,8 @@
     }
 
     .Hero-txt p {
-        font-size: 8px;
-        padding-inline: 40px;
+        font-size: 16px;
+        padding-inline: 40px; 
     }
 
     .btn {
