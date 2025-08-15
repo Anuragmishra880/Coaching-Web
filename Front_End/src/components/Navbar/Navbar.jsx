@@ -37,8 +37,8 @@ const Navbar = () => {
                                     to="home"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
-                                    duration={500}
+                                    offset={-90}
+                                    duration={300}
                                     onClick={handleLinkClick}
                                 >
                                     Home
@@ -50,8 +50,8 @@ const Navbar = () => {
                                     to="program"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
-                                    duration={500}
+                                    offset={-285}
+                                    duration={300}
                                     onClick={handleLinkClick}
                                 >
                                     Program
@@ -63,8 +63,8 @@ const Navbar = () => {
                                     to="about"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
-                                    duration={500}
+                                    offset={-140}
+                                    duration={300}
                                     onClick={handleLinkClick}
                                 >
                                     About
@@ -76,8 +76,8 @@ const Navbar = () => {
                                     to="campus"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
-                                    duration={500}
+                                    offset={-290}
+                                    duration={300}
                                     onClick={handleLinkClick}
                                 >
                                     Campus
@@ -89,8 +89,8 @@ const Navbar = () => {
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
-                                    duration={500}
+                                    offset={-10}
+                                    duration={300}
                                     onClick={handleLinkClick}
                                 >
                                     Contact
