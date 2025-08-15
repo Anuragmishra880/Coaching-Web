@@ -36,6 +36,6 @@ nav {
 @media screen and (max-width: 576px) {
 
     .navbar-toggler {
-        margin-left: 300px;
+        margin-left: 250px;
     }
 }
