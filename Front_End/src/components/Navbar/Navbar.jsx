@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg  navbar-dark  fixed-top shadow-sm  ${sticky ? 'nav-dark' : ''} id='home'`}>
+            <nav className={`navbar navbar-expand-lg  navbar-dark  fixed-top shadow-sm  ${sticky ? 'nav-dark' : ''} `}>
                 <div className="container">
                     <img src={logo} alt="" className='logo' />
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

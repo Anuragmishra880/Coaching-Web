@@ -41,7 +41,7 @@ const Inquiry = () => {
         }
     }
     return (
-        <div className='inquiry' >
+        <div className='inquiry' id='home'>
 
             <div className="inquiry-col">
                 <form onSubmit={handleSubmit}>
