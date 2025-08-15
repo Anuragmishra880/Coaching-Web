@@ -211,15 +211,15 @@
     }
 
     .program h3 {
-        width: 150px;
-
-        font-size: 6x;
+        width: 200px;
+        font-size: 7px;
         padding: 0;
     }
 
     .program p {
+        width: 150px;
         margin: 0;
-        font-size: 8px
+        font-size: 10px
     }
 
     .program a {
