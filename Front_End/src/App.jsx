@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <Inquiry></Inquiry>
+      {/* <Inquiry></Inquiry> */}
       <Hero></Hero>
 
       <Title subTitle='Our Programs' title='What We Offer'></Title>

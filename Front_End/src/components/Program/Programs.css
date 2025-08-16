@@ -196,36 +196,83 @@
 
 }
 
+@media screen and (max-width: 705px) and (min-width: 576px) {
+    .programs {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .program {
+        width: 70%;
+        /* thoda bada, mobile se chhota */
+    }
+
+    .program img {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    .program h3 {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .program p {
+        width: 90%;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .program a {
+        display: block;
+        text-align: center;
+        margin: 0 auto 15px auto;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
 @media screen and (max-width:576px) {
 
 
     .program {
-        width: 50%;
+        width: 90%;
     }
 
     .program img {
         width: 100%;
         border-radius: 10px;
+        height: 160px;
         /* display: block; */
         /* margin-block: 20px;
         margin-left: 25%; */
     }
 
     .program h3 {
-        width: 190px;
-        font-size: 9px;
-        padding: 0;
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0;
+
     }
 
     .program p {
-        width: 150px;
-        margin: 0;
-        font-size: 10px
+        width: 95%;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        font-size: 0.75rem;
     }
 
     .program a {
-        margin: 0;
-        margin-left: 25px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0.8rem;
         font-weight: 600;
     }
 
