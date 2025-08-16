@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -208,12 +209,12 @@
     .Hero {
         padding: 2rem 1rem;
         min-height: 40vh;
-        position: relative;
+position: relative;
 
     }
 
     .Hero-txt {
-        position: relative;
+     position: relative;
         width: 550px;
         z-index: 1;
     }
