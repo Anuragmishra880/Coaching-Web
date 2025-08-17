@@ -24,7 +24,9 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('https://coaching-web-backend.onrender.com/contact', {
+            // await axios.post('https://coaching-web-backend.onrender.com/contact', {
+            await axios.post('https://localhost:3000/contact', {
+
                 name: Name,
                 phNumber: ph_Number,
                 message: message

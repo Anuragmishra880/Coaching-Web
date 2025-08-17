@@ -7,14 +7,18 @@ const nodemailer = require('nodemailer');
 
 // POST Route
 router.post('/contact', async (req, res) => {
+    console.log("ENV USER:", process.env.GMAIL_USER);
+    console.log("ENV PASS:", process.env.GMAIL_PASS ? "Loaded" : "Missing");
+
     const { name, phNumber, message } = req.body;
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
+
         auth: {
 
-            user: process.env.GMAIL_USER,    // GMAIL-ID
-            pass: process.env.GMAIL_PASS     // App password
+            user: process.env.EMAIL_USER,    // GMAIL-ID
+            pass: process.env.EMAIL_PASS     // App password
 
         }
     });
@@ -33,6 +37,10 @@ router.post('/contact', async (req, res) => {
         console.error('Email Send Error:', error);
         res.status(500).json({ message: '❌ Failed to send email', error });
     }
+
+
+
+
 });
 
 module.exports = router
