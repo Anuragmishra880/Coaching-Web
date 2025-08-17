@@ -24,7 +24,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('https://coaching-web-backend.onrender.com/contact', {
+            await axios.post('http://localhost:3000/contact', {
                 name: Name,
                 phNumber: ph_Number,
                 message: message
@@ -34,6 +34,7 @@ const Contact = () => {
             setPhNumber('');
 
             setMessage('');
+            setSuccessMsg('Message sent successfully')
         }
         catch (err) {
             console.error(err);
@@ -69,7 +70,7 @@ const Contact = () => {
                     <button type='submit' className='btn seeMoreBtn'>Submit  Now</button>
                 </form>
                 <span id='sendMessage'>{successMsg}</span>
-                {/* <span>Message Send</span> */}
+
             </div>
         </div>
     )
