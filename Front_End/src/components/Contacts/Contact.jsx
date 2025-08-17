@@ -37,7 +37,7 @@ const Contact = () => {
             setSuccessMsg('Message sent successfully')
         }
         catch (err) {
-            console.error(err);
+            console.error('Email Send Error:', err.message);
             setSuccessMsg('Failed to send email');
         }
     }
