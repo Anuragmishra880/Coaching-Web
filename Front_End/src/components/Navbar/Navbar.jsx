@@ -34,7 +34,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <LinkScroll
                                     className="nav-link active px-3 py-2"
-                                    to="home"
+                                    to="hero"
                                     spy={true}
                                     smooth={true}
                                     offset={-90}
