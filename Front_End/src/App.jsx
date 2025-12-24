@@ -7,7 +7,7 @@ import About from './components/About/About'
 import Campus from './components/Campus/Campus'
 
 import Contact from './components/Contacts/Contact'
-import Inquiry from './components/Enquiry/Inquiry'
+// import Inquiry from './components/Enquiry/Inquiry'
 
 
 const App = () => {

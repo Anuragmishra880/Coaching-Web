@@ -9,11 +9,11 @@ const Contact = () => {
     const [successMsg, setSuccessMsg] = useState('');
 
     const handleNameChange = (e) => {
-        const cleanName = e.target.value.replace(/[^a-zA-Z ]/g, '');
+        const cleanName = String(e.target.value);
         setName(cleanName);
     }
     const handlePhNumberChange = (e) => {
-        const cleanPhNumber = e.target.value.replace(/[^0-9]/g, '');
+        const cleanPhNumber = Number(e.target.value);
         setPhNumber(cleanPhNumber);
     }
 
@@ -49,11 +49,11 @@ const Contact = () => {
                 <h3>Sends Us a Message <a href="sms:+7209079099"><i className="fa-solid fa-message"></i></a> </h3>
                 <p>Have questions or feedback? Reach out via the contact form or use the details below. We truly value your input as we work to provide the best possible coaching experience.</p>
                 <ul>
-                    <a href="mailto:anuragkumar575957@gmail.com"><li> <i class="fa-solid fa-envelope" ></i>contacta@gmail.com</li></a>
+                    <a href="mailto:anuragkumar575957@gmail.com"><li> <i className="fa-solid fa-envelope" ></i>contacta@gmail.com</li></a>
 
-                    < a href="tel:+917209079099"><li> <i class="fa-solid fa-phone"></i>+91 654646546546</li> </a>
+                    < a href="tel:+917209079099"><li> <i className="fa-solid fa-phone"></i>+91 654646546546</li> </a>
                     <a href="https://maps.app.goo.gl/SB8TpTo8gv2PYL8u7?g_st=ac" target="_blank">
-                        <li><i class="fa-solid fa-location-dot"></i> BST IGNOU BCA, MCA Classes, west metro station, Deepak Vihar, Uttam Nagar, New Delhi, Delhi  </li>
+                        <li><i className="fa-solid fa-location-dot"></i> BST IGNOU BCA, MCA Classes, west metro station, Deepak Vihar, Uttam Nagar, New Delhi, Delhi  </li>
                     </a>
                 </ul>
             </div>

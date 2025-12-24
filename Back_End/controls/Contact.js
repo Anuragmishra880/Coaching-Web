@@ -1,4 +1,3 @@
-
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
@@ -16,10 +15,8 @@ router.post('/contact', async (req, res) => {
         service: 'gmail',
 
         auth: {
-
             user: process.env.EMAIL_USER,    // GMAIL-ID
             pass: process.env.EMAIL_PASS     // App password
-
         }
     });
 
@@ -32,10 +29,10 @@ router.post('/contact', async (req, res) => {
 
     try {
         await transporter.sendMail(mailOptions);
-        res.status(200).json({ message: '✅ Email sent successfully!' });
+        res.status(200).json({ message: ' Email sent successfully!' });
     } catch (error) {
         console.error('Email Send Error:', error);
-        res.status(500).json({ message: '❌ Failed to send email', error });
+        res.status(500).json({ message: ' Failed to send email', error });
     }
 
 
